@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_list_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    <!--  header (i.e. list name) -->
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+        
+        <EditText
+            android:id="@+id/list_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/Blue"
+            android:padding="@dimen/padding_medium"
+            android:textColor="@android:color/white"
+            android:inputType="textCapSentences" 
+            android:selectAllOnFocus="true"
+            android:focusable="false"
+            />
+        
+    </LinearLayout>
+    
+    <!-- headings -->
+    <LinearLayout
+        android:id="@+id/subheader_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_layout"
+    >
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/items_heading_name" 
+            android:textStyle="bold"
+            android:textSize="18dp" 
+            />
+        
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/items_heading_rating"
+            android:textStyle="bold"
+            android:textSize="18dp" 
+            />
+
+            
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subheader_layout"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#B8B8B8"
+            />
+            
+    </LinearLayout>
+        
+<!-- the list view -->
+
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/top_divider"
+        android:layout_above="@+id/bottom_divider"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="20.0dp" 
+            />
+    </LinearLayout>
+        
+    <LinearLayout
+        android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_layout"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#B8B8B8"
+            />
+            
+    </LinearLayout>
+        
+    <!-- bottom buttons -->
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/padding_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <!-- left third -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="@dimen/standard_button_width"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/button_add_item" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    
+</RelativeLayout>

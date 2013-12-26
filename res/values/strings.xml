@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">List Of Lists</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_list_of_lists_main">List Of Lists</string>
+    <string name="front_existing_lists">Existing Lists</string>
+    <string name="test_db_name">testDb.db3</string>
+    <string name="test_db_data_lists">testDbLists.csv</string>
+    <string name="test_db_data_items">testDbItems.csv</string>
+    <string name="menu_reset_to_test_db">Reset To Test DB</string>
+    <string name="add_list">Add List</string>
+    <string name="delete_list">Delete</string>
+    <string name="rename_list">Rename</string>
+    <string name="clone_list">Clone</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="add_item">Add Item</string>
+    <string name="title_activity_single_list_items">List</string>
+    <string name="edit_item_default_rating">0</string>
+    <string name="items_heading_done">Done?</string>
+    <string name="edit_item_label_name">"Name: "</string>
+    <string name="items_heading_name">Name</string>
+    <string name="items_heading_rating">Rating</string>
+    <string name="edit_item_label_rating">"Rating: "</string>
+    <string name="button_add_item">Add Item</string>
+    <string name="button_reset">Reset</string>
+    <string name="clone_list_name">Name:</string>
+    <string name="menu_export">Export</string>
+    <string name="menu_import">Import</string>
+    <string name="purge_done">Purge Done</string>
+    <string name="list_stats_count_label">"Item Count: "</string>
+
+</resources>
