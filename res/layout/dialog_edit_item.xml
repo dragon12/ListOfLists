@@ -22,7 +22,7 @@
               android:layout_alignParentTop="true"
               android:layout_alignParentRight="true"
               android:layout_marginTop="20dp"
-              android:inputType="textCapSentences|textMultiLine"
+              android:inputType="textCapWords|textMultiLine"
               android:layout_marginLeft="30dp"
               android:selectAllOnFocus="true"
               />

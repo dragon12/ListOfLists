@@ -106,8 +106,7 @@ public class ListOfListsMainActivity extends ListActivity implements
 			ContextMenuInfo menuInfo) {
 		super.onCreateContextMenu(menu, v, menuInfo);
 		menu.add(0, CONTEXT_MENU_RENAME_ID, 0, R.string.rename_list);
-		menu.add(0, CONTEXT_MENU_CLONE_ID, 1, R.string.clone_list);
-		menu.add(0, CONTEXT_MENU_DELETE_ID, 2, R.string.delete_list);
+		menu.add(0, CONTEXT_MENU_DELETE_ID, 1, R.string.delete_list);
 	}
 
 	@Override
